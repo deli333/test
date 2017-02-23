@@ -1,11 +1,115 @@
+
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  lang="en-GB" xml:lang="en-GB">
 <head>
-	<title>Hello Tutorial</title>
+<link rel="stylesheet" href="/lib/w3.css">
+<style>
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    color: blue;
+     
+}
+
+h2 {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+     
+}
+
+ 
+</style>
+
+<title>Programming For Newbies </title>
+ 
+<meta charset="UTF-8"/>
+
 </head>
 <body>
 
-<h1>one more time</h1>
+<div class="w3-container">
+  <h1>About the Website</h1>
+  <p> The purpose of this website is to teach the fundamentals of
+programming  to people who are new at any programming language</p>
+</div>
 
+<ul class="w3-navbar w3-black">
+  <li><a href="javascript:void(0)" onclick="openSection('C ')">C Programming</a></li>
+   
+</ul>
+
+<ul class="w3-navbar w3-black">
+  <li><a href="javascript:void(0)" onclick="openSection('Java')">Java</a></li>
+   
+</ul>
+
+<ul class="w3-navbar w3-black">
+  <li><a href="javascript:void(0)" onclick="openSection('Web ')">Web Technologies</a></li>
+ 
+</ul>
+
+<div id="C " class="w3-container lang">
+  <h2>About C Programming</h2>
+  <p> Content will be ready.</p>
+</div>
+
+<div id="Java" class="w3-container lang" style="display:none">
+  <h2>About Java</h2>
+  <p>Java Language</p> 
+</div>
+
+<div id="Web " class="w3-container lang" style="display:none">
+  <h2>About Web Technologies</h2>
+  <p>Everything about web  technologies</p>
+</div>
+
+<script>
+function openSection(cityName) {
+    var i;
+    var x = document.getElementsByClassName("lang");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+ 
+
+
+ 
 </body>
 </html>
+
+ 
+ <!--
+ <style>
+h1 {
+    text-decoration: underline;
+    text-align: left;
+    color: blue;
+     
+}
+
+h2 {
+   text-decoration: none;
+    text-align: right;
+    color: blue;
+}
+
+h3 {
+   text-decoration: none;
+    text-align: right;
+    color: blue;
+}
+
+p {
+    color: blue;
+}
+
+
+</style>  --style, burasi css e eklenecek-->
+
+
